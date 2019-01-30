@@ -3,8 +3,61 @@
 <head>
 	<meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width initial-scale=1'>
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
 
 	<style>
+	.formuser
+	{
+		top: 52%;
+		left: 36%;
+		position:absolute;
+		font-family: 'Raleway';
+		font-size:20px;
+		color:black;
+	}
+	.button {
+  		border-radius: 4px;
+  		background-color: #f4511e;
+  		border: none;
+  		color: #FFFFFF;
+  		text-align: center;
+  		font-size: 14px;
+  		padding: 5px;
+  		width: 60px;
+  		transition: all 0.5s;
+  		cursor: pointer;
+  		margin: 5px;
+  		position: absolute;
+  		top: 8%;
+  		left:100%;
+	}
+
+	.button span {
+  		cursor: pointer;
+  		display: inline-block;
+  		position: relative;
+  		transition: 0.5s;
+}
+
+	.button span:after {
+  		content: '\00bb';
+  		position: absolute;
+  		opacity: 0;
+  		top: 0;
+  		right: -20px;
+  		transition: 0.5s;
+}
+
+	.button:hover span {
+  		padding-right: 25px;
+}
+
+	.button:hover span:after {
+  		opacity: 1;
+  		right: 0;
+}
 
 	.centered {
 		top: 50%;
@@ -13,12 +66,63 @@
 		font-family: 'Impact';
 		font-size:40px;
 		color:white;
-		letter-spacing: 4px;
+		letter-spacing: 7px;
 	}
 
-	.img2 {
-		top: 150%;
+	.taglinewelcomepage
+	{
+		top: 45%;
+		left: 23%;
+		position:absolute;
+		font-family: 'Raleway';
+		font-size:20px;
+		color:white;
 	}
+
+	input[type=text]
+	{
+		padding: 2px 2px;
+		margin: 8px 0;
+		display: inline-block;
+		border-radius: 1px;
+	}
+	.username
+	{
+		color:black;
+		top:60%;
+		left: 45%;
+		font-family: 'Helvetica';
+		font-size: 16px; 
+	}
+
+	.welcome{
+		font-family: 'ABeeZee';
+		font-size:100px;
+		top: 28%;
+		left: 33%;
+		position:absolute;
+		color:white;
+		
+	}
+
+	.full_sized {
+		top: 40%;
+		left: 40%;
+		font-size: 70px;
+		font-family: 'Constantia';
+		letter-spacing: 2px;
+	}
+
+	.bg {
+		padding:0px;
+		position:absolute;
+	}
+
+	img {
+  		max-width: 100%;
+	}
+
+
 	</style>
 
 	<title> Soumya Mukhija
@@ -30,7 +134,6 @@
 
 <body>
 	 {% include 'includes/_navbar.html' %}
-	<div class='container'>
  	{% block body %} {% endblock %}
  </div>
 </body>
