@@ -1,10 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Hello world!<title>
-</head>
-<body>
-  <h1>This is Soumya Mukhija</h1>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block body %} 
+	<div class='row' style='height:320px;'>
+		<div class='col-md-6'>
+			<div class='text-center p-2'>
+				<div class='container'>
+					<a href='#'>
+						<img src='static/Individual.jpg' onmouseout='this.src="static/Individual.jpg"' onmouseover='this.src="static/individualhover.png"' width='530px' 
+						height='320px' class='rounded change' alt='Image unavailable.'>
+						<div class='centered'> INDIVIDUAL </div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class='col-md-6 container p-5' >
+			<p class='lead'> Never lose track of your money again! 
+			Join now to gain access to a free wallet that goes along with you everywhere.</p>
+		</div>
+	</div>
+	<div class='row' style='height:100px;'>
+
+		<div class='col-md-6 container p-5'>
+			<p class='lead'> Every relationship is important. 
+			We are here to take care that you never spoil your relationships again due to finances! 
+		    Split bills with your friends using our 'friends' service. </p>
+		</div>
+
+		<div class='col-md-6 p-2'>
+
+			<a href='#'>
+				<img onmouseout='this.src="static/Splitting-4.png";' onmouseover='this.src="static/hoversplitting-2.png";' src='static/Splitting-4.png' id='img' width='550px' height='320px' class='rounded change' alt='Image unavailable.'>
+				<div class='centered img2'> GROUP </div>
+			</a>
+
+		</div>
+	</div>
+{% endblock %}
