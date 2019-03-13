@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width initial-scale=1'>
 	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Algreya' rel='stylesheet'>
+	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
 	<title>
 		Wallet
 	</title>
@@ -16,7 +19,7 @@
 	{
 		position: absolute;
 		padding-top: 1px;
-		top: 0.1%;
+		top: 10%;
 		left: 60%;
 		font-family: lora; 
 		font-size: 110px;
@@ -28,7 +31,7 @@
 	}
 	.tail
 	{
-		left:80.5%;
+		left:80%;
 		color: #228B22;
 	}
 	.head:hover
@@ -50,9 +53,9 @@
 	.form
 	{
 		border-radius: 8px;
-		height:30px;
+		height:35px;
 		position: absolute;
-		top:50%; 
+		top:45%; 
 		left:63%;
 		font-family: lora; 
 		padding-top: 3px; 
@@ -61,7 +64,7 @@
 	}
 	.password
 	{
-		top:58%;
+		top:51%;
 	}
 	input:focus 
 	{
@@ -70,14 +73,14 @@
 	button
 	{
 		position: absolute;
-		top:67%;
-		left: 69%;
+		top:59%;
+		left: 68%;
 		background-color: #228B22;
-		height: 28px;
+		height: 30px;
 		width:105px;
 		text-align: center;
 		border-width: 0px;
-		font-size:16px;
+		font-size:18px;
 		font-family: lora;
 		border-radius: 12px;
 		opacity: 0.5;
@@ -100,8 +103,7 @@
 	</style>
 </head>
 <body>
-	<p class='head'> Walle </p>
-	<p class='head tail'> t </p>
+	<p> <span class='head'> Walle<span class='tail'>t </span></p> 
 	<img id='trans' src='static/wallet2.png' height='140px' width='150px'>
 	<p id='desc'> Never lose track of your money again! Join us now to gain access to a free wallet that goes along with you everywhere.</p>
 	<div class='formuser'>
@@ -115,6 +117,6 @@
 
 
 </body>
-<script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'>
 </script>
 </html>
