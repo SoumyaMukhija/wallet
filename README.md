@@ -30,7 +30,7 @@ How to run:
 
 5- Navigate the website 
 
-6- Go back to your editor or command prompt and press ctrl + d to exit. 
+6- Go back to your editor or command prompt and press ctrl + c to exit. 
 
 
 
