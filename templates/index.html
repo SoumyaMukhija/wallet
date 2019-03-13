@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Algreya' rel='stylesheet'>
+	<title>
+		Wallet
+	</title>
+	<style>
+	body {
+		background-image: url(static/computer.jpg); 
+		background-size: cover;
+
+	}
+	.head
+	{
+		position: absolute;
+		padding-top: 1px;
+		top: 0.1%;
+		left: 60%;
+		font-family: lora; 
+		font-size: 110px;
+		font-weight: 0.5px;
+		color: #808080;
+		text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+		opacity: 0.4;
+ 
+	}
+	.tail
+	{
+		left:80.5%;
+		color: #228B22;
+	}
+	.head:hover
+	{
+		opacity: 0.8;
+	}
+	#desc 
+	{
+		position: absolute;
+		top: 33%;
+		left: 50%;
+		font-family: lora; 
+		font-size: 15px;
+		font-weight: 0.2px;
+		color: #808080;
+		text-align: center;
+		padding-right: 5px; 
+	}
+	.form
+	{
+		border-radius: 8px;
+		height:30px;
+		position: absolute;
+		top:50%; 
+		left:63%;
+		font-family: lora; 
+		padding-top: 3px; 
+		font-size: 15px; 
+		padding-left:5px;
+	}
+	.password
+	{
+		top:58%;
+	}
+	input:focus 
+	{
+		border: 2px solid #808080;
+	}
+	button
+	{
+		position: absolute;
+		top:67%;
+		left: 69%;
+		background-color: #228B22;
+		height: 28px;
+		width:105px;
+		text-align: center;
+		border-width: 0px;
+		font-size:16px;
+		font-family: lora;
+		border-radius: 12px;
+		opacity: 0.5;
+		color:black;
+	}
+	button:hover
+	{
+		cursor:pointer;
+		opacity:0.8;
+	}
+	#trans
+	 {
+	 	position: absolute;
+	 	top: 17%;
+	 	left:28.5%;
+	 	transform: rotate(89deg);
+	 }
+
+
+	</style>
+</head>
+<body>
+	<p class='head'> Walle </p>
+	<p class='head tail'> t </p>
+	<img id='trans' src='static/wallet2.png' height='140px' width='150px'>
+	<p id='desc'> Never lose track of your money again! Join us now to gain access to a free wallet that goes along with you everywhere.</p>
+	<div class='formuser'>
+		<form method='POST' action="{{url_for ('enter')}}">
+			<input type='text' class='form control username' name='username' placeholder="Username* (max 30 chars)" size="30"> 
+			<input type='password' class='form control password' name='password' placeholder="Password* (max 30 chars)" size='30'>
+		</form>
+		<button type='button'> Go>> </button>		
+	</div>
+
+
+
+</body>
+<script>
+</script>
+</html>
